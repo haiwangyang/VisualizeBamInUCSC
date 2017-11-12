@@ -4,13 +4,14 @@
 ### Author: Haiwang Yang (Oliver Lab)                    ###
 ### Contact: haiwang.yang@nih.gov; haiwangyang@gmail.com ###
 ### This script is to achieve the following functions    ###
-### (0) First you need just some sorte.bam files (num    ###
-###     < 10) in the current folder; then run this scrit ###
+### (0) You just need some sorted.bam files              ###
+###    	in the current folder; then run this script      ###
 ### (1) sorted.bam => sorted.bedGraph                    ###  
 ### (2) sorted.bedGraph => sorted.bigWig                 ###    
 ### (3) sorted.bam & sorted.bigWig to ftp                ###
-###     Another upload.sh should be in this folder too   ###
-### (4) output UCSC track code                           ###
+###     another upload.sh should be in this folder too   ###
+### (4) get UCSC track code from output                  ###
+### (5) copy and paste these track code to UCSC          ###
 ############################################################
 echo -ne "Checking for sorted.bam files in this folder\n";
 n1=`ls *.sorted.bam | wc -l`
